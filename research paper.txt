@@ -1,0 +1,30 @@
+Callback vs Promises
+
+A callback functions are specificially used as an arguement to pass one function to another. A routine or action is completed once the outer function is invoked. The fuction is then eventually executed inside the caller's body by the API. Passing the correct parameters into the CB function is the responsibility of the caller. A caller can be further instructed if it expects a particular return value. Synchronous and asynschrous are two ways to call a CB. The asynscrous are called back after the operation has been completed. Where the Synchronous callbacks, if no asychronous callbacks, are called immediately once the outer function is invoked. CB functions are meant to be used in limited cases inside a parent function. CB functions are also referred to as an anonumous function. Which is the only argument the the Promise constructor takes. Resolve and Reject are the two arguments that a CB function takes. However, the CB function may be difficult to understand and have errors that are harder to manage. 
+
+
+
+
+https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
+https://www.freecodecamp.org/news/what-is-a-callback-function-in-javascript-js-callbacks-example-tutorial/#:~:text=A%20callback%20is%20a%20function,the%20parent%20function%20is%20used.
+https://www.geeksforgeeks.org/promise-vs-callback-in-javascript/#
+https://developer.mozilla.org/en-US/docs/Glossary/Promise
+https://betterprogramming.pub/callbacks-vs-promises-in-javascript-1f074e93a3b5
+
+
+A promise is used when a value isn't known yet. It allows the asynchronous method to supply the value at some point in the future. There are 3 states to a Promise, which are: Pending, fufilled and rejected. A pending promise has not been fufilled or rejected since it is still in it's initial state. An aperation the was sucessfully completed is a Fufilled promise. And lastly, a failed operation means that the promise was rejected. For a promise to be settled or "lock-in" means it matched to another promise has it resolved. Promises usually have better ahndling of errors and improve the readability of code. you use callbacks to attach onto the returned promises. 
+
+
+
+
+VAR VS LET VS CONST
+
+Lets start with what each of these statements are. So var initializes each statement wether it's a function or globally-scoped variable, to a value. Then there's let, which initialiazes a value of a variable that you can reassign or change. The value of a const can not be changed or reassigned through an operator. The variables sre declared by a block scope. Const and let are very much alike. it can declare both scoped functions and block, but let can be redeclared outside of the same scope. These 3 declarations  can not be in the same scope together. 
+For a let declared variable ato be available it must be inside the defined block. Declared var variables are available through the function. The scoping block and re/declaration are the main differences between var and let. 
+
+While var has been around a while, const and let are features that just showed up with the ES6 addition. This addition helped with come of the problems that came along with using var. Since it was added let is now the declaration that is used more often and preferred. When you declare a variable block, it allows let to only be used in that block. While you can't change the variable declared, you can update it. Const can only be used within the declared block along with let. However, unlike let, it can't be use us to to declare another variable or to update it. The block scoped declarations are both let and const.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/
+https://www.educba.com/javascript-var-vs-let/
+https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
+ 
